@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-around;
   .logo-container {
+    display: flex;
+
     max-width: 50px;
     @include desktop {
       max-width: 100px;

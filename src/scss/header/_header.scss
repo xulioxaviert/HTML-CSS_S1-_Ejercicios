@@ -1,63 +1,42 @@
 .header {
   display: flex;
-  justify-content: space-evenly;
-  background-color: $background;
-  width: auto;
-  justify-content: space-between;
-  @include movil {
-    padding: 0;
-    margin: 0;
-    width: auto;
-  }
-
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  background-color: #000106;
   .logo-container {
-    display: flex;
-    max-width: 100px;
-    @include movil {
-      max-width: 100px;
-    }
     &__img {
       width: 100%;
+      height: 100%;
     }
   }
 
+  @include movil {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
   .navigation {
-    
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
 
     .navigation__list {
       display: flex;
-      // width: 600px;
-      @include movil {
-        a {
-          width: auto;
-          padding: 0;
-          margin: 0;
-        }
-      }
-      &__list {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 0px;
-        padding: 0;
-      }
-
+      width: 100%;
+      justify-content: space-around;
       &__item {
-        margin: 0 25px;
-        cursor: pointer;
-        @include movil {
-          padding: 0;
-          margin: 0px;
-          &__item a {
-            font-size: 15px;
-          }
-        }
+        color: $main;
+
+        
       }
       &__item:hover {
-        text-decoration: underline 1px solid;
+        color: $main;
+        border-bottom: 1px solid $main;
+        padding: 0;
+        margin: 0;
+
       }
     }
-  }
-  a {
-    color: $main;
   }
 }

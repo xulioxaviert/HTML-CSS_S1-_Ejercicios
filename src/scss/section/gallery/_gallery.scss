@@ -1,19 +1,16 @@
-.gallery {
-  background-color: $secondary;
+.container-gallery {
+  background-color: black;
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
+  .container-blog__card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    
+    
 
-    li {
-      max-width: $size-container-gallery;
-      margin: $margin-gallery;
-      @include desktop {
-        max-width: $size-container-gallery-desktop;
-      }
-      img {
-        width: 100%;
-      }
+    .container-blog__card-img > img {
+      width: 100%;
     }
   }
 }

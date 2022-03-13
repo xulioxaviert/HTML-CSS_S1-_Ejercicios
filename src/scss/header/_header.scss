@@ -27,7 +27,7 @@
 
   .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     width: 100%;
     .navigation__list {
       display: flex;

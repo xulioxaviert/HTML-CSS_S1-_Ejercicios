@@ -6,22 +6,18 @@
   background-color: #000106;
   @include tablet {
     width: 100%;
-    height: 100%;
+    height: 100px;
   }
   @include movil {
     width: 100%;
-    height: 100%;
+    height: 75px;
   }
   @include movil {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    .logo-container {
-      width: 50px;
-      height: 50px;
-    }
+    
   }
-
   .logo-container {
     &__img {
       width: 100%;
@@ -31,11 +27,11 @@
 
   .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     .navigation__list {
       display: flex;
-      width: 100%;
+      width: 55%;
       justify-content: space-around;
       &__item {
         color: $main;
@@ -48,11 +44,10 @@
       }
       @include tablet {
         &__item > a {
-          font-size: 16px;
+          font-size: 14px;
           padding: 6px;
         }
       }
-
       @include movil {
         &__item > a {
           font-size: 10px;

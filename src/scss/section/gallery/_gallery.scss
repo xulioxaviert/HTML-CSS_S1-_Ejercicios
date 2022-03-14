@@ -1,13 +1,14 @@
 .container-gallery {
   background-color: black;
 
+  background-color: #00030a;
+  background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+
   .container-blog__card {
     width: 100%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto auto;
-    
-    
 
     .container-blog__card-img > img {
       width: 100%;

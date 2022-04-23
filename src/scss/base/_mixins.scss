@@ -10,7 +10,11 @@
   }
 }
 
-
+@mixin tablet2 {
+  @media screen and (max-width: #{$tablet2}) {
+    @content;
+  }
+}
 
 @mixin desktop {
   @media screen and (max-width: #{$desktop}) {

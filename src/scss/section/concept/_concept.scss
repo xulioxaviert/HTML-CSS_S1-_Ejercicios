@@ -4,69 +4,110 @@
   align-items: center;
   justify-content: center;
   text-align: justify;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 100%;
+  margin: 0px 10%;
+  
+  img {
+    width: 100%;
+  }
+  
   .container-center__concept-img {
+    
     display: flex;
     flex-direction: column;
-    width: 100%;
-    position: relative;
-    justify-content: center;
-  }
-  .container-center__concept-img img {
-    width: 100%;
   }
 
   .container-center__concept-content {
+    position: absolute;
+    width: 100%;
+    padding: 0px 20%;
     display: flex;
     flex-direction: column;
-    position: absolute;
 
-    width: 100%;
     h2 {
       text-align: center;
-      font-weight: bolder;
-      margin: 2px 0;
-    }
-    p {
-      background-color: #fff;
       margin: 10px 0;
-      padding: 5px;
-      margin-left: 15%;
-      margin-right: 15%;
-      border-radius: 8px;
     }
-    @include tablet {
-      h2 {
-        text-align: center;
-        font-weight: bolder;
-        margin: 2px 0;
-      }
-      p {
-        background-color: #fff;
-        margin: 10px 0;
-        padding: 5px;
-        margin-left: 15%;
-        margin-right: 15%;
-        border-radius: 10px;
-      }
-    }
-    @include movil {
-      h2 {
-        text-align: center;
-        font-weight: bolder;
-        margin: 2px 0;
-        font-size: 18px;
-      }
-      p {
-        background-color: #fff;
-        margin: 1px 0;
-        padding: 1px;
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 6px;
-        font-size: 8px;
-      }
+
+    p {
+      background-color: white;
+      padding: 10px 5px;
+      margin: 10px 0;
+      border-radius: 5px;
+
     }
   }
+
+  @include desktop {
+    .container-center__concept-content {
+      padding: 0px 20%;
+
+      h2 {
+        font-size: 22px;
+        margin: 8px 0;
+      }
+
+      p {
+        font-size: 20px;
+        margin: 8px 0;
+      }
+    }
+
+  }
+
+  @include tablet2 {
+    .container-center__concept-content {
+      padding: 0px 18%;
+
+      h2 {
+        font-size: 18px;
+        margin: 4px 0;
+      }
+
+      p {
+        font-size: 16px;
+        margin: 6px 0;
+      }
+    }
+
+  }
+
+  @include tablet {
+    .container-center__concept-content {
+      padding: 0px 16%;
+
+      h2 {
+        font-size: 16px;
+        margin: 3px 0;
+      }
+
+      p {
+        margin: 5px 0;
+        font-size: 14px;
+      }
+    }
+
+  }
+
+
+
+  @include movil {
+    .container-center__concept-content {
+      padding: 0px 16%;
+
+      h2 {
+        font-size: 12px;
+        margin: 1px 0;
+      }
+
+      p {
+        margin: 1px 0;
+        font-size: 10px;
+        padding: 6px 1px;
+
+      }
+    }
+
+  }
+
 }

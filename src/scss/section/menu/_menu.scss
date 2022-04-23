@@ -1,0 +1,26 @@
+.container-menu {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        background-color: #B8AA97;
+        text-align: center;
+        width: 100%;
+        padding: 25px 0;
+
+        h2 {
+            color: white;
+        }
+    }
+
+    &__menu-card {
+
+        width: 100%;
+
+        img {
+            width: 100%
+        }
+    }
+
+
+}

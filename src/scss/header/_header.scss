@@ -36,7 +36,7 @@
       &__item {
         color: $main;
       }
-      &__item:hover {
+      a:hover {
         color: $main;
         border-bottom: 1px solid #d9ad26;
         padding: 0;
@@ -49,7 +49,7 @@
         }
       }
       @include movil {
-        &__item > a {
+         a {
           font-size: 10px;
           padding: 2px;
         }

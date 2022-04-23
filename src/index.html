@@ -16,20 +16,20 @@
         </div>
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__list__item"><a href="#"> Home</a></li>
-                <li class="navigation__list__item"><a href="#"> Concepto</a></li>
-                <li class="navigation__list__item"><a href="#"> Fotos</a></li>
-                <li class="navigation__list__item"><a href="#"> Menu</a></li>
-                <li class="navigation__list__item"><a href="#"> Reservas</a></li>
-                <li class="navigation__list__item"><a href="#"> Blog</a></li>
-                <li class="navigation__list__item"><a href="#"> Contacto</a></li>
+                <li class="navigation__list__item"><a href="#Home">Home</a></li>
+                <li class="navigation__list__item"><a href="#Concepto">Concepto</a></li>
+                <li class="navigation__list__item"><a href="#Fotos">Fotos</a></li>
+                <li class="navigation__list__item"><a href="#Menu">Menu</a></li>
+                <li class="navigation__list__item"><a href="#Reservas">Reservas</a></li>
+                <li class="navigation__list__item"><a href="#Blog">Blog</a></li>
+                <li class="navigation__list__item"><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
             <article class="container-center">
-                <div class="container-center__content-img">
+                <div id="Home" class="container-center__content-img">
                     <img src="./assets/img/imagen_1.jpg" alt="image">
                     <div class="container-center__content">
                         <h1>Descubre</h1>
@@ -41,7 +41,7 @@
 
             <article class="container-center__concept">
                 <div class="container-center__concept-img">
-                    <img src="./assets/img/vegetables_3.jpg" alt="image">
+                    <img id="Concepto" src="./assets/img/vegetables_3.jpg" alt="image">
                 </div>
                 <div class="container-center__concept-content">
                     <h2>CONCEPTO</h2>
@@ -55,38 +55,39 @@
                         libero,
                         beatae
                         dolores quisquam omnis, blanditiis explicabo provident.</p>
-                    <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam dolorem, praesentium
+                    <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam dolorem,
+                        praesentium
                         eaque
                         in
                         nesciunt ullam repellendus id omnis officia pariatur ipsa expedita enim iste? Dolores et
                         assumenda
                         eveniet eum.</p>
-                        
+
 
                 </div>
 
 
             </article>
         </section>
-        <section class="container-gallery">
-            <h2>CONOCE EL RESTAURANTE</h2>
-            <div class="container-blog">
-                <div class="container-blog__card">
+        <section class="container-gallery__center">
+            <h2 id="Fotos"> CONOCE EL RESTAURANTE</h2>
+            <div class="container-galley">
+                <div class="container-gallery__card">
                     <img src="./assets/img/imagen_2.jpg" alt="image">
                 </div>
-                <div class="container-blog__card">
+                <div class="container-gallery__card">
                     <img src="./assets/img/imagen_4.jpg" alt="image">
                 </div>
-                <div class="container-blog__card">
+                <div class="container-gallery__card">
                     <img src="./assets/img/imagen_3.jpg" alt="image">
                 </div>
-                <div class="container-blog__card">
+                <div class="container-gallery__card">
                     <img src="./assets/img/imagen_6.jpg" alt="image">
                 </div>
-                <div class="container-blog__card">
+                <div class="container-gallery__card">
                     <img src="./assets/img/imagen_5.jpg" alt="image">
                 </div>
-                <div class="container-blog__card">
+                <div class="container-gallery__card">
                     <img src="./assets/img/imagen_7.jpg" alt="image">
                 </div>
 
@@ -95,69 +96,82 @@
         <section>
             <div class="container-menu">
                 <div class="container-menu__title">
-                    <h2>CARTA</h2>
+                    <h2 id="Menu">CARTA</h2>
                 </div>
                 <div class="container-menu__menu-card">
                     <img src="./assets/img/menu.jpg" alt="">
                 </div>
-             
+
             </div>
         </section>
         <section>
             <div class="container-reserve">
-                <div class="container-reserve__form">
-                    <div class="container-reserve__form-question">
-                        <label for="number">Personas:</label>
-                        <input id="number" type="number" name="number">
-                    </div>
-                    <div class="container-reserve__form-question">
-                        <label for="date">Hora:</label>
-                        <input id="date" type="datetime-local" name="date">
-                    </div>
-                    <div class="container-reserve__form-question">
-                        <label for="table">Tipo de Mesa:</label>
-                        <input id="table" type="text" name="table">
-                    </div>
-                    <div class="container-reserve__form-question">
-                        <input id="button" type="submit" name="button" value="Reservar">
-                    </div>
-                    <div class="container-reserve__form-question">
-                        <label for="item">Si no encuentra disponibilidad, apúntese en la lista de espera</label>
-                        <input id="button" type="submit" name="button" value="Lista de espera">
-                        <input id="button" type="submit" name="button" value="Solicitar Grupo">
-                    </div>
-
+                <div class="container-reserve__img">
+                    <h2 id="Reservas">RESERVAS</h2>
+                    <img src="./assets/img/imagen_fondo_restaurant.jpg" alt="img">
                 </div>
-                <div class="container-reserve__address">
-                    <div class="container-reserve__address-title">
+                <div class="container-reserve__form">
+                    <form class="form" action="">
+                        <div class="container-reserve__form-question">
+                            <label for="number">Personas:</label>
+                            <input id="number" type="number" name="number">
+                            <label for="date">Hora:</label>
+                            <input id="date" type="datetime-local" name="date">
+                        </div>
+
+                        <div class="container-reserve__form-question">
+                            <label for="table">Tipo de Mesa:</label>
+                            <input id="table" type="text" name="table">
+                            <input id="button" type="submit" name="button" value="Reservar">
+                        </div>
+
+                        <div class="container-reserve__form-question">
+                            <label for="item">Si no encuentra disponibilidad, apúntese en la lista de espera</label>
+                            <input id="button" type="submit" name="button" value="Lista de espera">
+                            <input id="button" type="submit" name="button" value="Solicitar Grupo">
+                    </form>
+                    <div class="container-reserve__address">
+
                         <h2>MOZZABAR</h2>
-                        <h2>FOOD & DRINKS</h2>
+                        <h3>FOOD & DRINKS</h3>
                         <P>Conde de Peñalver, 64</P>
                         <P>28006 - Madrid</P>
                         <P>Abrimos de Lunes a Domingos</P>
                         <P>De 07:30 a 01:30</P>
+
                     </div>
                 </div>
+
+            </div>
             </div>
         </section>
         <section>
+            <div class="container-blog__title">
+                <h2>Blog</h2>
+            </div>
             <div class="container-blog">
-                <div>
-                    <div class="container-blog__card-img">
-                        <img src="./assets/img/imagen_9.jpg" alt="image">
-                    </div>
-                    <div class="container-blog__card-img">
-                        <img src="./assets/img/imagen_10.jpg" alt="image">
-                    </div>
-                    <div class="container-blog__card-img">
-                        <img src="./assets/img/imagen_11.jpg" alt="image">
-                    </div>
+                <div id="Blog" class="container-blog__card">
+                    <img src="./assets/img/imagen_9.jpg" alt="image">
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eum sit, quisquam eaque
+                        quam animi optio alias nulla quis quidem.</P>
+                </div>
+                <div class="container-blog__card">
+                    <img src="./assets/img/imagen_10.jpg" alt="image">
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eum sit, quisquam eaque
+                        quam animi optio alias
+                        nulla quis quidem.</P>
+                </div>
+                <div class="container-blog__card">
+                    <img src="./assets/img/imagen_11.jpg" alt="image">
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eum sit, quisquam eaque
+                        quam animi optio alias
+                        nulla quis quidem.</P>
                 </div>
             </div>
         </section>
         <section>
             <div class="container-contact">
-                <div class="container-contact__img">
+                <div id="Contacto" class="container-contact__img">
                     <img src="./assets/img/logo.png" alt="logo">
                     <h3>VEN CUANDO QUIERAS</h3>
                     <div class="container-contact__img-contact">

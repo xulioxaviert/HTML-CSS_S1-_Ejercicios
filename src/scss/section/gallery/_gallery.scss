@@ -1,11 +1,11 @@
-.container-gallery {
+.container-gallery__center {
   background-color: #042603;
   background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
   padding: 25px 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 5px;
 
   h2 {
     text-align: center;
@@ -14,7 +14,7 @@
     margin: 25px 0;
   }
 
-  .container-blog {
+  .container-galley {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -22,8 +22,8 @@
     gap: 15px;
   }
 
-  .container-blog__card {
-    width: 550px;
+  .container-gallery__card {
+    width: 450px;
 
     img {
       width: 100%;

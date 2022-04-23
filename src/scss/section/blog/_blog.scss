@@ -1,0 +1,25 @@
+.container-blog {
+
+    display: flex;
+
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+
+
+    .container-blog__card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        width: 350px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.container-blog__title {
+    text-align: center;
+}

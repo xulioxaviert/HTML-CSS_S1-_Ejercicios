@@ -14,7 +14,7 @@
     align-content: center;
 
     &__img {
-margin: 20px 0;
+        margin: 20px 0;
         width: 100%;
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
@@ -34,7 +34,7 @@ margin: 20px 0;
         padding: 0 20%;
         position: absolute;
         align-items: center;
-        
+
 
         .container-reserve__form-question {
             text-align: left;
@@ -44,10 +44,22 @@ margin: 20px 0;
             margin: 5px 0;
             width: 100%;
 
+            .btn {
+                border: 1px solid grey;
+            }
+
+            .btn:hover {
+                background-color: #000106;
+                color: white;
+                cursor: pointer;
+            }
+
             input {
                 height: 30px;
-
+                border: none;
+                border-radius: 5px;
             }
+
 
             label {
                 padding: 2px 0;
@@ -55,7 +67,7 @@ margin: 20px 0;
         }
 
         .form {
-            
+
             text-align: right;
             width: 50%;
             padding-right: 10px;
@@ -72,12 +84,15 @@ margin: 20px 0;
         padding-left: 10px;
     }
 
+
+
     @include tablet {
 
         .container-reserve__form {
             flex-direction: column;
             padding: 0 5%;
             width: 100%;
+
 
             .form {
                 border-right: none;
@@ -102,20 +117,24 @@ margin: 20px 0;
     }
 
     @include movil {
-       
+
         .container-reserve__form {
-            width: 100%;
-            padding: 0;
+            margin-top: 65px;
+            width: 80%;
             flex-direction: column;
 
+            .container-reserve__form-question {
+                padding: 0;
+                margin: 0;
+
+
+            }
+
             .form {
-                
                 border-right: none;
                 width: 80%;
 
-                input {
-                    height: 16px;
-                }
+
 
                 label {
                     padding: 1px;
